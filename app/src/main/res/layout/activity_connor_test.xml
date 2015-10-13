@@ -3,13 +3,23 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.calebpotratz.unlockapp.ConnorTest">
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="To Connor's Test Page"
+        android:text="Dim Display"
         android:textAllCaps="false"
-        android:onClick="toConnorTest"/>
+        android:onClick="dimDisplay"
+        android:id="@+id/dimmer"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Brighten Display"
+        android:textAllCaps="false"
+        android:layout_below="@+id/dimmer"/>
+        <!--android:onClick="brighter"-->
 
 </RelativeLayout>
