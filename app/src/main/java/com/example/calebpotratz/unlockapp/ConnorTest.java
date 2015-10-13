@@ -1,6 +1,7 @@
 package com.example.calebpotratz.unlockapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.PowerManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -44,9 +45,9 @@ public class ConnorTest extends AppCompatActivity {
 
     public void dimDisplay(View view)
     {
-        WindowManager.LayoutParams params = getWindow().getAttributes();
+        /*WindowManager.LayoutParams params = getWindow().getAttributes();
         params.screenBrightness = 0;
-        getWindow().setAttributes(params);
+        getWindow().setAttributes(params);*/
 
         /*PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         PowerManager.WakeLock wl = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "My Tag");
@@ -64,5 +65,8 @@ public class ConnorTest extends AppCompatActivity {
         PowerManager.WakeLock wl2 = pm.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK, "My Tag");
         wl2.acquire();
         wl2.release();*/
+
+        Intent intent = new Intent(this, Blackout.class);
+        startActivity(intent);
     }
 }
