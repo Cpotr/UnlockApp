@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
     public void toConnorTest(View view)
     {
         Intent intent = new Intent(this, ConnorTest.class);
+        startActivity(intent);
+    }
+
+    public void toWebView(View view)
+    {
+        Intent intent = new Intent(this, WebViewTestReal.class);
         startActivity(intent);
     }
 

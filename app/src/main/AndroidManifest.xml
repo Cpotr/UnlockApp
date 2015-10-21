@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.calebpotratz.unlockapp" >
 
-    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -29,7 +30,11 @@
         <activity
             android:name=".Blackout"
             android:label="@string/title_activity_blackout"
-            android:theme="@style/Blackout">
+            android:theme="@style/Blackout" >
+        </activity>
+        <activity
+            android:name=".WebViewTestReal"
+            android:label="@string/title_activity_web_view_test_real" >
         </activity>
     </application>
 
